@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Manager</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-left i {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .header-right i {
+      margin-left: 10px;
+      font-size: 20px;
+    }
+
+    main {
+      padding: 20px;
+      flex-grow: 1;
+    }
+
+    .file-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .file-item {
+      background-color: #f9f9f9; /* Light gray background color */
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      text-decoration: none; /* Added to style anchor tag as a link */
+      color: inherit; /* Inherit text color from parent */
+      transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    }
+
+    .file-item:hover {
+      background-color: #e0e0e0; /* Darker gray background on hover */
+    }
+
+    .file-item i {
+      font-size: 20px;
+      margin-right: 10px;
+    }
+
+    .file-name {
+      font-size: 16px;
+      font-weight: bold;
+      margin-right: auto;
+    }
+
+    footer {
+      background-color: #fff;
+      padding: 10px;
+      border-top: 1px solid #eee;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <i>DANISH ANSARI</i>
+    </div>
+    <div class="header-right">
+      <i>100 GB / 11 TB</i>
+    </div>
+  </header>
+
+  <main>
+    <div class="file-list">
+      <a href="intent:https://www.googleapis.com/drive/v3/files/1zQ0aniOUWBiUUWXCfSQUQet1w2BNqmtH?alt=media&key=AIzaSyC8bHERX7qpvjqMJLpoyh2eODrnvZ9US1s#Intent;type=video/*;end" class="file-item"> "Doctor.Strange.2016.720p.Dual.Audio.(Hin-Eng).mkv" </a>
+
+      <a href="#" class="file-item">
+        <div class="file-name">Bollywood</div>
+      </a>
+      <a href="#" class="file-item">
+        <div class="file-name">Harry potter</div>
+      </a>
+      <a href="#" class="file-item">
+        <div class="file-name">Hollywood</div>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <!-- Add footer content here -->
+    </div>
+  </footer>
+</body>
+</html>
